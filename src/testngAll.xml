@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteOne">
+
+<!-- If add more test cases In this suite, You need to add them as bellow. -->
+
+<test name="SuiteOneCaseOne">
+    <classes>
+        <class name="com.cisco.sep.SuiteOne.SuiteOneCaseOne" ></class>  
+        
+    </classes>
+</test>
+
+<test name="SuiteOneCaseTwo">
+    <classes>
+        <class name="com.cisco.sep.SuiteOne.SuiteOneCaseTwo" ></class>  
+    </classes>
+</test>
+
+
+
+
+<!-- If add more test cases In this suite, You need to add them as bellow. -->
+
+<test name="SuiteTwoCaseOne">
+    <classes>
+        <class name="com.cisco.sep.SuiteTwo.SuiteTwoCaseOne" ></class>  
+    </classes>
+</test>
+
+<test name="SuiteTwoCaseTwo">
+    <classes>
+        <class name="com.cisco.sep.SuiteTwo.SuiteTwoCaseTwo" ></class>  
+    </classes>
+</test>
+
+</suite>

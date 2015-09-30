@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ReportNGTest_Suite]">
+  <test name="GmailTest(failed)">
+    <classes>
+      <class name="com.gmail.GmailPage">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="LaunchPortal"/>
+        </methods>
+      </class> <!-- com.gmail.GmailPage -->
+    </classes>
+  </test> <!-- GmailTest(failed) -->
+</suite> <!-- Failed suite [ReportNGTest_Suite] -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteOne]">
+  <test name="SuiteOneCaseOne(failed)">
+    <classes>
+      <class name="com.cisco.sep.SuiteOne.SuiteOneCaseTwo">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="closeBrowser"/>
+          <include name="reporterDataResults"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.cisco.sep.SuiteOne.SuiteOneCaseTwo -->
+      <class name="com.cisco.sep.SuiteOne.SuiteOneCaseOne">
+        <methods>
+          <include name="SuiteOneCaseOneTest" invocation-numbers="0 1"/>
+          <include name="closeBrowser"/>
+          <include name="reporterDataResults"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.cisco.sep.SuiteOne.SuiteOneCaseOne -->
+    </classes>
+  </test> <!-- SuiteOneCaseOne(failed) -->
+  <test name="SuiteOneCaseTwo(failed)">
+    <classes>
+      <class name="com.cisco.sep.SuiteOne.SuiteOneCaseTwo">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="closeBrowser"/>
+          <include name="reporterDataResults"/>
+          <include name="SuiteOneCaseTwoTest" invocation-numbers="0 1"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.cisco.sep.SuiteOne.SuiteOneCaseTwo -->
+      <class name="com.cisco.sep.SuiteOne.SuiteOneCaseOne">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reporterDataResults"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.cisco.sep.SuiteOne.SuiteOneCaseOne -->
+    </classes>
+  </test> <!-- SuiteOneCaseTwo(failed) -->
+</suite> <!-- Failed suite [SuiteOne] -->

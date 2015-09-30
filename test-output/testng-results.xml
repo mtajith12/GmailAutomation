@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ReportNGTest_Suite" duration-ms="66726" started-at="2015-09-30T15:47:57Z" finished-at="2015-09-30T15:49:04Z">
+    <groups>
+    </groups>
+    <test name="GmailTest" duration-ms="66726" started-at="2015-09-30T15:47:57Z" finished-at="2015-09-30T15:49:04Z">
+      <class name="com.gmail.GmailPage">
+        <test-method status="PASS" signature="checkSuiteToRun()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="checkSuiteToRun" is-config="true" duration-ms="1243" started-at="2015-09-30T21:17:56Z" finished-at="2015-09-30T21:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteToRun -->
+        <test-method status="PASS" signature="checkCaseToRun()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="checkCaseToRun" is-config="true" duration-ms="22577" started-at="2015-09-30T21:17:57Z" finished-at="2015-09-30T21:18:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseToRun -->
+        <test-method status="PASS" signature="LaunchPortal()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="LaunchPortal" duration-ms="44089" started-at="2015-09-30T21:18:20Z" description="LaunchPortal" finished-at="2015-09-30T21:19:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchPortal -->
+        <test-method status="PASS" signature="reporterDataResults()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="reporterDataResults" is-config="true" duration-ms="3" started-at="2015-09-30T21:19:04Z" finished-at="2015-09-30T21:19:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reporterDataResults -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="closeBrowser" is-config="true" duration-ms="11" started-at="2015-09-30T21:19:04Z" finished-at="2015-09-30T21:19:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.gmail.GmailPage -->
+    </test> <!-- GmailTest -->
+  </suite> <!-- ReportNGTest_Suite -->
+</testng-results>
