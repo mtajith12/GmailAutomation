@@ -1,9 +1,10 @@
-2015-09-30 20:36:19,661 - rootLogger - INFO - All Excel Files Initialised successfully.
-2015-09-30 20:36:19,691 - rootLogger - INFO - Param.properties file loaded successfully.
-2015-09-30 20:36:19,691 - rootLogger - INFO - Objects.properties file loaded successfully.
-2015-09-30 20:36:19,695 - rootLogger - INFO - Execution started for SuiteOneBase.
-2015-09-30 20:36:19,945 - rootLogger - INFO - All Excel Files Initialised successfully.
-2015-09-30 20:36:19,949 - rootLogger - INFO - Param.properties file loaded successfully.
-2015-09-30 20:36:19,953 - rootLogger - INFO - Objects.properties file loaded successfully.
-2015-09-30 20:36:19,955 - rootLogger - INFO - GmailPage : Execution started.
-2015-09-30 20:36:19,956 - rootLogger - INFO - GmailPage : CaseToRun = N for So Skipping Execution.
+2015-09-30 22:39:17,698 - rootLogger - INFO - All Excel Files Initialised successfully.
+2015-09-30 22:39:17,723 - rootLogger - INFO - Param.properties file loaded successfully.
+2015-09-30 22:39:17,725 - rootLogger - INFO - Objects.properties file loaded successfully.
+2015-09-30 22:39:17,726 - rootLogger - INFO - Execution started for SuiteOneBase.
+2015-09-30 22:39:19,039 - rootLogger - INFO - All Excel Files Initialised successfully.
+2015-09-30 22:39:19,044 - rootLogger - INFO - Param.properties file loaded successfully.
+2015-09-30 22:39:19,049 - rootLogger - INFO - Objects.properties file loaded successfully.
+2015-09-30 22:39:19,050 - rootLogger - INFO - GmailPage : Execution started.
+2015-09-30 22:39:31,670 - rootLogger - INFO - ATUTestRecorder is started
+2015-09-30 22:39:50,593 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
