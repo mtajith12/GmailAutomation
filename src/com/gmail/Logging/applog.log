@@ -8,3 +8,5 @@
 2015-09-30 22:39:19,050 - rootLogger - INFO - GmailPage : Execution started.
 2015-09-30 22:39:31,670 - rootLogger - INFO - ATUTestRecorder is started
 2015-09-30 22:39:50,593 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
+2015-09-30 22:41:04,958 - rootLogger - INFO - GmailPage : Reporting test data set line 0 as PASS In excel.
+2015-09-30 22:41:04,961 - rootLogger - INFO - GmailPage : Reporting test case as PASS In excel.

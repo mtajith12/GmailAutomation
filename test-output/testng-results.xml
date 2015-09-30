@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="ReportNGTest_Suite" duration-ms="66726" started-at="2015-09-30T15:47:57Z" finished-at="2015-09-30T15:49:04Z">
+  <suite name="ReportNGTest_Suite" duration-ms="106037" started-at="2015-09-30T17:09:18Z" finished-at="2015-09-30T17:11:04Z">
     <groups>
     </groups>
-    <test name="GmailTest" duration-ms="66726" started-at="2015-09-30T15:47:57Z" finished-at="2015-09-30T15:49:04Z">
+    <test name="GmailTest" duration-ms="106037" started-at="2015-09-30T17:09:18Z" finished-at="2015-09-30T17:11:04Z">
       <class name="com.gmail.GmailPage">
-        <test-method status="PASS" signature="checkSuiteToRun()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="checkSuiteToRun" is-config="true" duration-ms="1243" started-at="2015-09-30T21:17:56Z" finished-at="2015-09-30T21:17:57Z">
+        <test-method status="PASS" signature="checkSuiteToRun()[pri:0, instance:com.gmail.GmailPage@cfed7c]" name="checkSuiteToRun" is-config="true" duration-ms="11097" started-at="2015-09-30T22:39:07Z" finished-at="2015-09-30T22:39:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteToRun -->
-        <test-method status="PASS" signature="checkCaseToRun()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="checkCaseToRun" is-config="true" duration-ms="22577" started-at="2015-09-30T21:17:57Z" finished-at="2015-09-30T21:18:20Z">
+        <test-method status="PASS" signature="checkCaseToRun()[pri:0, instance:com.gmail.GmailPage@cfed7c]" name="checkCaseToRun" is-config="true" duration-ms="44184" started-at="2015-09-30T22:39:18Z" finished-at="2015-09-30T22:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCaseToRun -->
-        <test-method status="PASS" signature="LaunchPortal()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="LaunchPortal" duration-ms="44089" started-at="2015-09-30T21:18:20Z" description="LaunchPortal" finished-at="2015-09-30T21:19:04Z">
+        <test-method status="PASS" signature="LaunchPortal()[pri:0, instance:com.gmail.GmailPage@cfed7c]" name="LaunchPortal" duration-ms="61812" started-at="2015-09-30T22:40:03Z" description="LaunchPortal" finished-at="2015-09-30T22:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchPortal -->
-        <test-method status="PASS" signature="reporterDataResults()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="reporterDataResults" is-config="true" duration-ms="3" started-at="2015-09-30T21:19:04Z" finished-at="2015-09-30T21:19:04Z">
+        <test-method status="PASS" signature="reporterDataResults()[pri:0, instance:com.gmail.GmailPage@cfed7c]" name="reporterDataResults" is-config="true" duration-ms="1" started-at="2015-09-30T22:41:04Z" finished-at="2015-09-30T22:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reporterDataResults -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.GmailPage@251241f5]" name="closeBrowser" is-config="true" duration-ms="11" started-at="2015-09-30T21:19:04Z" finished-at="2015-09-30T21:19:04Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.GmailPage@cfed7c]" name="closeBrowser" is-config="true" duration-ms="13" started-at="2015-09-30T22:41:04Z" finished-at="2015-09-30T22:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
