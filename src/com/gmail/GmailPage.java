@@ -90,100 +90,52 @@ public class GmailPage extends SuiteGoogleBase{
 	
 
 	  
-	 @Test (enabled = true,   description = "LaunchPortal")
-	  public void LaunchPortal()throws Exception{
+	 @Test (enabled = true,   /*dataProvider = "GoooleRegistrationDataProvider",*/ priority= 0,description = "LaunchPortal")
+	  public void GoooleRegistration()throws Exception{
 		 //To navigate to URL. It will read site URL from PropertyUtil.properties file
 		  driver.get(PropertyUtil.getProperty("SITE_URL"));		
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		  driver.manage().window().maximize();
 		  String Title = "Google";
 		  Assert.assertEquals(Title, driver.getTitle());
-		  driver.findElement(By.xpath(ObjectRep.getProperty("gmail"))).click();
+		  //Clicking on Gmail link
+		  getElementByXPath("gmail").click();
+		 
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		  //Verifying the page content
 		  driver.getPageSource().contains("Already use Gmail?");
-		
-		  driver.findElement(By.xpath(ObjectRep.getProperty("gmail-create-account"))).click();
+		//Clicking on Google signup
+		  getElementByXPath("gmail-create-account").click();
 		  driver.getPageSource().contains("One account is all you need");
-		  
-		  driver.findElement(By.id(ObjectRep.getProperty("FN"))).sendKeys("Ajith");
-		  driver.findElement(By.id(ObjectRep.getProperty("LN"))).sendKeys("kumar");
+		  //Entering the personal details
+		  getElementByID("FN").sendKeys("Ajith");
+		  getElementByID("LN").sendKeys("kumar");
 		
 		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		  driver.findElement(By.id(ObjectRep.getProperty("Passwd"))).sendKeys("azmuyt@123");
-		  driver.findElement(By.id(ObjectRep.getProperty("ConfirmPasswd"))).sendKeys("azmuyt@123");
+		  getElementByID("Passwd").sendKeys("azmuyt@123");
+		  getElementByID("ConfirmPasswd").sendKeys("azmuyt@123");
 		
-		  //Click on the Arrow mark
-	        driver.findElement(By.xpath("//label[@id='month-label']/span/div/div")).click();
+		  //Click on the Month Arrow mark		  
+		   getElementByXPath("Month").click();
 	        //Select value from the list
-	        driver.findElement(By.xpath("//label[@id='month-label']/span/div[2]/div[@id=':5']")).click();
-	        driver.findElement(By.id("BirthDay")).sendKeys("26");
-	        driver.findElement(By.id("BirthYear")).sendKeys("1984");
+		   getElementByXPath("month-label").click();
+		   getElementByID("BirthDay").sendKeys("26");
+		   getElementByID("BirthYear").sendKeys("1984");
 	        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	        //Seleing the Gender
+	        getElementByXPath("Gender").click();
 	        
-	       // driver.findElement(By.xpath(".//*[@id='Gender']/div")).click();
-	       // driver.findElement(By.xpath(".//*[@id='Gender']/div[3]/div[@id=':d']")).click();
-	       /* WebElement genderselect = driver.findElement(By.xpath("//div[@class='goog-menu goog-menu-vertical']/div[@id=':e']"));
-            Actions action1=new Actions(driver);
-            action1.click(genderselect);
-            action1.perform();
-	        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);*/
-	        driver.findElement(By.xpath(".//*[@id='Gender']/div")).click();
-	       // driver.findElement(By.xpath(".//*[@id='Gender']/div[2]/div[@id=':d']")).click();
-	     //   driver.findElement(By.xpath("//*[@id='Gender']/div[1]/div[2]")).sendKeys("Male");
-	      //  driver.findElement(By.xpath("Gender")).sendKeys("Male");
-	       
-	        
-	  //   getElementByXPath(ObjectRep.getProperty("Gender")).click();
-	       // Select  select1 =new Select(gender);
-	      //  select1.selectByValue("Male");
-
-//	        WebElement gender = driver.findElement(By.xpath("//div[@id='Gender']/div[@class='goog-menu goog-menu-vertical']/div"));
-//        Actions action = new Actions(driver);
-//        action.click(gender);
-	    /*    WebElement gender = driver.findElement(By.xpath("//div[@id='Gender']"));
-            Actions action = new Actions(driver);
-            action.click(gender);
-          //  action.keyDown(Keys.ARROW_DOWN).click();
-           
-            action.sendKeys("Male");*/
-	        
-//	        WebElement genderselect = driver.findElement(By.xpath("//div[@id='Gender']"));
-//            Actions action1=new Actions(driver);
-//            action1.click(genderselect);
-//            action1.sendKeys("Male");
-//            action1.perform();
-            
-
-/*WebElement genderselect = driver.findElement(By.xpath("//div[@role='listbox']/div[@id=':e']"));
-            Actions action1=new Actions(driver);
-            action1.click(genderselect);
-            action1.perform();*/
-            
-          //  action.perform();
-          //  action.keyDown(Keys.ARROW_DOWN).click();
-	        
-	        
-	        
-	        
-	        driver.findElement(By.name("RecoveryPhoneNumber")).sendKeys("9900563321");
+	        getElementByName("RecoveryPhoneNumber").sendKeys("9900563321");
 		  
-	        driver.findElement(By.name("RecoveryEmailAddress")).sendKeys("mt.ajith@gmail.com");   
-	        
-	        /// Enter the capcha manually 
-	       
-	        System.out.println("Enter the capcha manually and wait for 20 seconnds");
-	        driver.findElement(By.id("SkipCaptcha")).click();
-	       
-	        
-	        driver.findElement(By.id("termsofservice-label")).click();
-	        
-	       
-	       
-	        driver.findElement(By.id("submitbutton")).click();
-	        System.out.println("Enter the verification code sent on ur registered mobile number");
+	        getElementByName("RecoveryEmailAddress").sendKeys("mt.ajith@gmail.com");         
 	     
+	        getElementByID("SkipCaptcha").click();	       
+	        
+	        getElementByID("termsofservice-label").click();  
+	        getElementByID("submitbutton").click();
+	        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	       
-	        System.out.println("Gmail Registration is not sucessfuly ");
+	        Add_Log.info("Gmail Registration is not sucessfuly, Please enter the mandatary fields ");
 	        
 	        Assert.assertEquals(ObjectRep.getProperty("expectedErrorMsg"),"You can't leave this empty.", "Please enter the valid userName");
 		   }
@@ -219,7 +171,7 @@ public class GmailPage extends SuiteGoogleBase{
 	
 	//This data provider method will return 4 column's data one by one In every Iteration.
 	@DataProvider
-	public Object[][] SuiteOneCaseOneData(){
+	public Object[][] GoooleRegistrationDataProvider(){
 		//To retrieve data from Data 1 Column,Data 2 Column,Data 3 Column and Expected Result column of SuiteOneCaseOne data Sheet.
 		//Last two columns (DataToRun and Pass/Fail/Skip) are Ignored programatically when reading test data.
 		return SuiteUtility.GetTestDataUtility(FilePath, TestCaseName);
@@ -243,75 +195,6 @@ public class GmailPage extends SuiteGoogleBase{
 	}
 	
 
-	//Accepts 4 column's String data In every Iteration.
-	@Test(enabled = false,dataProvider="SuiteOneCaseOneData")
-	public void SuiteOneCaseOneTest(String DataCol1,String DataCol2,String DataCol3,String ExpectedResult){
-		
-		DataSet++;
-		
-		//Created object of testng SoftAssert class.
-		s_assert = new SoftAssert();
-		
-		//If found DataToRun = "N" for data set then execution will be skipped for that data set.
-		if(!TestDataToRun[DataSet].equalsIgnoreCase("Y")){	
-			Add_Log.info(TestCaseName+" : DataToRun = N for data set line "+(DataSet+1)+" So skipping Its execution.");
-			//If DataToRun = "N", Set Testskip=true.
-			Testskip=true;
-			throw new SkipException("DataToRun for row number "+DataSet+" Is No Or Blank. So Skipping Its Execution.");
-		}
-		
-		//If found DataToRun = "Y" for data set then bellow given lines will be executed.
-		//To Convert data from String to Integer
-		int ValueOne = Integer.parseInt(DataCol1);
-		int ValueTwo = Integer.parseInt(DataCol2);
-		int ValueThree = Integer.parseInt(DataCol3);
-		int ExpectedResultInt =  Integer.parseInt(ExpectedResult);
-		
-		//To Initialize  browser.
-		loadWebBrowser();		
-		
-		//To navigate to URL. It will read site URL from PropertyUtil.properties file
-		driver.get(PropertyUtil.getProperty("siteURL")+"/2014/04/calc.html");		
-		
-		//Simple calc test.
-		
-		//Locate Element by Name Locator example.
-		getElementByName("txt_Result").clear();
-		
-		//Locate element by dynamic xPath example.
-		getElementByXPath("btn_Calc_PrePart",ValueOne,"btn_Calc_PostPart").click();
-		
-		//Locate Element by ID Locator example.
-		getElementByID("btn_Plus").click();
-		
-		getElementByXPath("btn_Calc_PrePart",ValueTwo,"btn_Calc_PostPart").click();
-		
-		getElementByID("btn_Plus").click();
-				
-		getElementByXPath("btn_Calc_PrePart",ValueThree,"btn_Calc_PostPart").click();
-		
-		//Locate Element by cssSelector Locator example.
-		getElementByCSS("btn_Equals").click();
-		
-		String Result = getElementByName("txt_Result").getAttribute("value");
-		
-		//To Convert data from String to Integer
-		int ActualResultInt =  Integer.parseInt(Result);
-		
-		//Compare actual and expected values.
-		if(!(ActualResultInt==ExpectedResultInt)){
-			//If expected and actual results not match, Set flag Testfail=true.
-			Testfail=true;	
-			//If result Is fail then test failure will be captured Inside s_assert object reference.
-			//This soft assertion will not stop your test execution.
-			s_assert.assertEquals(ActualResultInt, ExpectedResultInt, "ActualResult Value "+ActualResultInt+" And ExpectedResult Value "+ExpectedResultInt+" Not Match");
-		}
-		
-		if(Testfail){
-			//At last, test data assertion failure will be reported In testNG reports and It will mark your test data, test case and test suite as fail.
-			s_assert.assertAll();
-			loadWebBrowser();	
-		}
-	}
+	
 	
 }

@@ -5,8 +5,11 @@
     <classes>
       <class name="com.gmail.GmailPage">
         <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
           <include name="checkSuiteToRun"/>
-          <include name="LaunchPortal"/>
+          <include name="GoooleRegistration"/>
         </methods>
       </class> <!-- com.gmail.GmailPage -->
     </classes>

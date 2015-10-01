@@ -1,12 +1,13 @@
-2015-09-30 22:39:17,698 - rootLogger - INFO - All Excel Files Initialised successfully.
-2015-09-30 22:39:17,723 - rootLogger - INFO - Param.properties file loaded successfully.
-2015-09-30 22:39:17,725 - rootLogger - INFO - Objects.properties file loaded successfully.
-2015-09-30 22:39:17,726 - rootLogger - INFO - Execution started for SuiteOneBase.
-2015-09-30 22:39:19,039 - rootLogger - INFO - All Excel Files Initialised successfully.
-2015-09-30 22:39:19,044 - rootLogger - INFO - Param.properties file loaded successfully.
-2015-09-30 22:39:19,049 - rootLogger - INFO - Objects.properties file loaded successfully.
-2015-09-30 22:39:19,050 - rootLogger - INFO - GmailPage : Execution started.
-2015-09-30 22:39:31,670 - rootLogger - INFO - ATUTestRecorder is started
-2015-09-30 22:39:50,593 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
-2015-09-30 22:41:04,958 - rootLogger - INFO - GmailPage : Reporting test data set line 0 as PASS In excel.
-2015-09-30 22:41:04,961 - rootLogger - INFO - GmailPage : Reporting test case as PASS In excel.
+2015-10-01 06:58:39,057 - rootLogger - INFO - All Excel Files Initialised successfully.
+2015-10-01 06:58:39,069 - rootLogger - INFO - Param.properties file loaded successfully.
+2015-10-01 06:58:39,073 - rootLogger - INFO - Objects.properties file loaded successfully.
+2015-10-01 06:58:39,073 - rootLogger - INFO - Execution started for SuiteOneBase.
+2015-10-01 06:58:39,329 - rootLogger - INFO - All Excel Files Initialised successfully.
+2015-10-01 06:58:39,333 - rootLogger - INFO - Param.properties file loaded successfully.
+2015-10-01 06:58:39,337 - rootLogger - INFO - Objects.properties file loaded successfully.
+2015-10-01 06:58:39,337 - rootLogger - INFO - GmailPage : Execution started.
+2015-10-01 06:58:39,897 - rootLogger - INFO - ATUTestRecorder is started
+2015-10-01 06:58:45,125 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
+2015-10-01 06:59:11,829 - rootLogger - INFO - Gmail Registration is not sucessfuly, Please enter the mandatary fields 
+2015-10-01 06:59:11,845 - rootLogger - INFO - GmailPage : Reporting test data set line 0 as PASS In excel.
+2015-10-01 06:59:11,849 - rootLogger - INFO - GmailPage : Reporting test case as PASS In excel.
